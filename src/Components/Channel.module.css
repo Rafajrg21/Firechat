@@ -1,0 +1,90 @@
+.channelContainer {
+    display: flex; 
+    flex-direction: column; 
+    height: 94vh; 
+}
+
+.msgContainer {
+    max-width: 1024px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.msgWindow {
+    border-bottom-width: 1px;
+    border-bottom-color: #a5a8aa;
+    margin-bottom: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    .msgWindow {
+        border-bottom-color: #676869;
+    }
+}
+
+.msgWelcome {
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    text-align: center;
+}
+
+.formContainer {
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.msgForm {
+    display: flex;
+    flex-direction: row;
+    background-color: #a5a8aa;
+    border-radius: 0.375rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    z-index: 5;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (prefers-color-scheme: dark) {
+    .msgForm {
+        color: white;
+        background-color: #192338;
+    }
+}
+
+.msgInput {
+    display: flex;
+    flex: 1 1 0%;
+    background-color: transparent;
+    outline: none;
+}
+
+.msgSubmitBtn {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: #676869;
+}
+
+.msgSubmitBtn:hover {
+    color: #242424;
+}
+
+@media (prefers-color-scheme: dark){
+    .msgSubmitBtn:hover {
+        color: #fefefe;
+    }
+}
